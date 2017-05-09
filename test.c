@@ -5,3 +5,10 @@ unsigned int test3 = 5;
 
 int count =  0x00000000;;
  hndl = (void*)0xA150BEEF;
+
+void f(int n)
+{
+  int* array = calloc(n, sizeof(int));
+  do_some_work(array);
+  free(array);
+}
